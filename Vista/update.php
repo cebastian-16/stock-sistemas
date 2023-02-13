@@ -89,7 +89,7 @@
                         </div>
                         <div class="form-group col-md-3">
                             <label>SISTEMA OPERATIVO *</label>
-                            <input class='form-control' value="<?php echo $consultaM["SISTEMAOPERATIVO"] ?>" name='SISTEMAOPERATIVO' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9]{1,40}' >
+                            <input class='form-control' value="<?php echo $consultaM["SISTEMAOPERATIVO"] ?>" name='SISTEMAOPERATIVO' type='text'  pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9]{1,40}' >
                         </div>
 
                         <div class="form-group col-md-2">
