@@ -38,7 +38,7 @@
 		}
 
 
-			public function insertardatos($id,$activo,$SISTEMAOPERATIVO,$CPU ,$cache ,$memoria,$almacenamiento,$direccion,$mac,$ultimo_mantenimiento, $proximo_mantenimiento, $año_lanzamiento ,$fecha_compra, $V_CPU, $V_MEM, $V_DISCO, $V_FINAL,$login){
+		 public  function  insertardatos ($id,$activo,$SISTEMAOPERATIVO,$CPU ,$cache ,$memoria,$almacenamiento,$direccion,$mac,$ultimo_mantenimiento, $proximo_mantenimiento, $año_lanzamiento ,$fecha_compra, $V_CPU, $V_MEM, $V_DISCO, $V_FINAL,$login){
 				$PROMEDIO = $V_CPU + $V_MEM + $V_DISCO;
 				$V_FINAL = $PROMEDIO / 3;
 				$sql = "INSERT INTO `datos`( `id`, `SISTEMAOPERATIVO`, `CPU`, `cache`, `memoria`, `almacenamiento`, `direccion`, `mac`, `ultimo_mantenimiento`, `proximo_mantenimiento`, `año_lanzamiento`, `fecha_compra`, `V_CPU`, `V_MEM`, `V_DISCO`, `V_FINAL`)";

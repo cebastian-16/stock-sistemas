@@ -43,7 +43,7 @@
 							</a>
 							<a href="exportCaracteristicas.php">
 								<button type="button" class="btn btn-success" style="margin-top: 0px !important;"> informe
-									excel caracteristicas</button>
+									excel caracteristicas</button>
 							</a>
 						</div>
 					</div>
@@ -62,11 +62,13 @@
 							<div class="filter-group">
 								<label>Placa</label>
 								<input type="text" class="form-control" id="name" onkeyup="load(1);">
+							
 							</div>
 							<div class="filter-group">
 								<label>Ubicación</label>
 								<select class="form-control" id="location" onchange="load(1);">
 									<option value="">Todos</option>
+									
 									<?php
 									$resultadoUbicacion = $registro->consultarUbicacion();
 									while ($valores = mysqli_fetch_array($resultadoUbicacion)) {
