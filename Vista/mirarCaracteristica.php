@@ -36,10 +36,10 @@
                     echo "<div class='alert alert-danger alert-dismissible'>";
                     echo "  <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>";
                     echo "  <strong>Error!</strong> No se encontraron Registros";
-                    echo "	<strong>Desea ingresar carecteristicas del equipo ".$placa." !  </strong>";
-				    echo "	<a href='ingresarCaracteristicas.php?activo=".$placa."'><input type='button' class='btn btn-primary' value='insertar'></a> ";
+                    echo "	<strong>Desea ingresar carecteristicas del equipo " . $placa . " !  </strong>";
+                    echo "	<a href='ingresarCaracteristicas.php?activo=" . $placa . "'><input type='button' class='btn btn-primary' value='insertar'></a> ";
                     echo "</div>";
-                    
+
                 }
             }
 
@@ -86,111 +86,111 @@
                     </div>
                 </div>
                 <?php if (empty($row)) { ?>
-                <div class="row">
-                    <a href="articulosReport.php">
-                        <input type='button' value='volver' class="btn btn-primary">
-                    </a>
-                </div>
+                    <div class="row">
+                        <a href="articulosReport.php">
+                            <input type='button' value='volver' class="btn btn-primary">
+                        </a>
+                    </div>
                 <?php } ?>
                 <?php if (!empty($row)) { ?>
-                <div class="row">
-                    <form action="mirarCaracteristica.php" method="post" name="formDatos">
-                        <div class="form-group col-md-3">
-                            <label>PLACA:</label>
-                            <?php echo "<input class='form-control' style='display:none;' value='" . $row["placa"] . "' name='id' type='text'>" ?>
-                            <?php echo "<input class='form-control' disabled value='" . $row["placa"] . "' type='text'>" ?>
-                        </div>
+                    <div class="row">
+                        <form action="mirarCaracteristica.php" method="post" name="formDatos">
+                            <div class="form-group col-md-3">
+                                <label>PLACA:</label>
+                                <?php echo "<input class='form-control' style='display:none;' value='" . $row["placa"] . "' name='id' type='text'>" ?>
+                                <?php echo "<input class='form-control' disabled value='" . $row["placa"] . "' type='text'>" ?>
+                            </div>
 
-                        <div class="form-group col-md-3">
-                            <label>DESCRIPCION:</label>
-                            <?php echo "<input class='form-control' disabled value='" . $row["descripcion"] . "' name='descripcion' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{1,40}' required> "; ?>
-                        </div>
+                            <div class="form-group col-md-3">
+                                <label>DESCRIPCION:</label>
+                                <?php echo "<input class='form-control' disabled value='" . $row["descripcion"] . "' name='descripcion' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{1,40}' required> "; ?>
+                            </div>
 
-                        <div class="form-group col-md-3">
-                            <label>TIPO:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row['tipo_id'] . "' name='tipo_id' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
+                            <div class="form-group col-md-3">
+                                <label>TIPO:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row['tipo_id'] . "' name='tipo_id' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
 
-                        <div class="form-group col-md-3">
-                            <label>UBICACION:</label>
-                            <?php echo "<input class='form-control' disabled value='" . $row['ubicacion_id'] . "' name='ubicacion_id ' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
+                            <div class="form-group col-md-3">
+                                <label>UBICACION:</label>
+                                <?php echo "<input class='form-control' disabled value='" . $row['ubicacion_id'] . "' name='ubicacion_id ' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
 
-                        <div class="form-group col-md-3">
-                            <label>OBSERVACION:</label>
-                            <?php echo "<input class='form-control' disabled value='" . $row["observacion"] . "' name='observacion' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
+                            <div class="form-group col-md-3">
+                                <label>OBSERVACION:</label>
+                                <?php echo "<input class='form-control' disabled value='" . $row["observacion"] . "' name='observacion' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
 
-                        <div class="form-group col-md-3">
-                            <label>SISTEMA OPERATIVO:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["SISTEMAOPERATIVO"] . "' name='SISTEMAOPERATIVO' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{1,40}' required> "; ?>
-                        </div>
+                            <div class="form-group col-md-3">
+                                <label>SISTEMA OPERATIVO:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["SISTEMAOPERATIVO"] . "' name='SISTEMAOPERATIVO' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{1,40}' required> "; ?>
+                            </div>
 
-                        <div class="form-group col-md-3">
-                            <label>CPU:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["CPU"] . "' name='CPU' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
+                            <div class="form-group col-md-3">
+                                <label>CPU:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["CPU"] . "' name='CPU' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
 
-                        <div class="form-group col-md-3">
-                            <label>CACHE:</label>
-                            <?php echo "<input class='form-control'   disabled value='" . $row["cache"] . "' name='cache' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
+                            <div class="form-group col-md-3">
+                                <label>CACHE:</label>
+                                <?php echo "<input class='form-control'   disabled value='" . $row["cache"] . "' name='cache' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
 
-                        <div class="form-group col-md-3">
-                            <label>MEMORIA RAM:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["memoria"] . "' name='memoria' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>ALMACENAMIENTO:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["almacenamiento"] . "' name='almacenamiento' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>IP:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["direccion"] . "' name='direccion' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>MAC:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["mac"] . "' name='mac' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>ULTIMO MANTENIMIENTO:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["ultimo_mantenimiento"] . "' name='ultimo_mantenimiento' type='date' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>PROXIMO MANTENIMIENTO:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["proximo_mantenimiento"] . "' name='proximo_mantenimiento' type='date' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>AÑO LANZAMIENTO CPU:</label>
-                            <?php echo "<input class='form-control'  disabled value='" . $row["año_lanzamiento"] . "' name='año_lanzamiento' type='date' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>FECHA COMPRA CPU:</label>
-                            <?php echo "<input class='form-control' disabled value='" . $row["fecha_compra"] . "' name='fecha_compra' type='date' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>VALORACION CPU:</label>
-                            <?php echo "<input class='form-control' disabled value='" . $row["V_CPU"] . "' name='V_CPU' type='int' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>VALORACION RAM:</label>
-                            <?php echo "<input class='form-control' disabled value='" . $row["V_MEM"] . "' name='V_MEM' type='int' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>VALORACION DISCO:</label>
-                            <?php echo "<input class='form-control' disabled value='" . $row["V_DISCO"] . "' name='V_DISCO' type='int' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label>VALORACION FINAL:</label>
-                            <?php echo "<input class='form-control' disabled value='" . $row["V_FINAL"] . "' name='V_FINAL' type='int' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
-                        </div>
+                            <div class="form-group col-md-3">
+                                <label>MEMORIA RAM:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["memoria"] . "' name='memoria' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>ALMACENAMIENTO:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["almacenamiento"] . "' name='almacenamiento' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>IP:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["direccion"] . "' name='direccion' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>MAC:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["mac"] . "' name='mac' type='text' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>ULTIMO MANTENIMIENTO:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["ultimo_mantenimiento"] . "' name='ultimo_mantenimiento' type='date' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>PROXIMO MANTENIMIENTO:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["proximo_mantenimiento"] . "' name='proximo_mantenimiento' type='date' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>AÑO LANZAMIENTO CPU:</label>
+                                <?php echo "<input class='form-control'  disabled value='" . $row["año_lanzamiento"] . "' name='año_lanzamiento' type='date' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>FECHA COMPRA CPU:</label>
+                                <?php echo "<input class='form-control' disabled value='" . $row["fecha_compra"] . "' name='fecha_compra' type='date' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>VALORACION CPU:</label>
+                                <?php echo "<input class='form-control' disabled value='" . $row["V_CPU"] . "' name='V_CPU' type='int' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>VALORACION RAM:</label>
+                                <?php echo "<input class='form-control' disabled value='" . $row["V_MEM"] . "' name='V_MEM' type='int' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>VALORACION DISCO:</label>
+                                <?php echo "<input class='form-control' disabled value='" . $row["V_DISCO"] . "' name='V_DISCO' type='int' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>VALORACION FINAL:</label>
+                                <?php echo "<input class='form-control' disabled value='" . $row["V_FINAL"] . "' name='V_FINAL' type='int' pattern='[a-zA-ZÀ-ÿ\u00f1\u00d1\0-9 ]{0,120}'>"; ?>
+                            </div>
 
-                        <div class="form-group col-md-12">
-                            <a href='articulosReport.php'><input type='button' value='Volver' class="btn btn-primary"></a>
-                        </div>
+                            <div class="form-group col-md-12">
+                                <a href='articulosReport.php'><input type='button' value='Volver' class="btn btn-primary"></a>
+                            </div>
 
-                    </form>
-                </div>
+                        </form>
+                    </div>
                     <?php
                 }
         }
