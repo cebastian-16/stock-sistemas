@@ -82,9 +82,6 @@
                             <h2>Caracteristica del Equipo</b></h2>
                         </div>
                         <div class="col-sm-8">
-                            <a href="exportCaracteristicas.php">
-                                <button type="button" class="btn btn-success" style="margin-top: 0px !important;"> informe excel caracteristicas</button>
-                            </a>
                         </div>
                     </div>
                 </div>

@@ -70,7 +70,7 @@
                     </div>
                     <div class="hr"></div>
                     <div class="group">
-                        <img src="img/servired.png">                        
+                        <img src="img/servired .png">                        
                     </div>
                     
                 </div>
