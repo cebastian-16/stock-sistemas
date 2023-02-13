@@ -10,22 +10,22 @@
         <div class="item active">
             <img src="img/banner1.jpg" class="img-fluid" alt="First Slide">
             <div class="carousel-caption">
-                <h3>Título de la primera diapositiva</h3>
-                <p>Contenido de la diapositiva</p>
+                <!-- <h3>Título de la primera diapositiva</h3> -->
+                <!-- <p>Contenido de la diapositiva</p> -->
             </div>
         </div>
         <div class="item">
             <img src="img/banner2.jpg" alt="Second Slide">
             <div class="carousel-caption">
-                <h3>Título de la segunda diapositiva</h3>
-                <p>Contenido de la diapositiva</p>
+                <!-- <h3>Título de la segunda diapositiva</h3> -->
+                <!-- <p>Contenido de la diapositiva</p> -->
             </div>
         </div>
         <div class="item">
             <img src="img/banner3.jpg" alt="Third Slide">
             <div class="carousel-caption">
-                <h3>Título de la tercera diapositiva</h3>
-                <p>Contenido de la diapositiva</p>
+                <!-- <h3>Título de la tercera diapositiva</h3> -->
+                <!-- <p>Contenido de la diapositiva</p> -->
             </div>
         </div>
     </div>
