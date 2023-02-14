@@ -98,11 +98,11 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label>Año de lanzamiento de la CPU *</label>
-                        <input type="date" name="año_lanzamiento" for="año_lanzamiento" class="form-control" required="required">
+                        <input type="date" name="año_lanzamiento" for="año_lanzamiento" class="form-control" >
                     </div>
                     <div class="form-group col-md-3">
                         <label>Fecha de compra de la CPU *</label>
-                        <input type="date" name="fecha_compra" for="fecha_compra" class="form-control" required="required">
+                        <input type="date" name="fecha_compra" for="fecha_compra" class="form-control" >
                     </div>
                     <div class="form-group col-md-4">
                         <label>VALORACION CPU *</label>
