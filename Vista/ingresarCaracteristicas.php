@@ -61,15 +61,15 @@
                     <div class="form-group col-md-4">
                         <label>SISTEMAO PERATIVO *</label>
                         <input type="text" name="SISTEMAOPERATIVO" for="SISTEMAOPERATIVO" placeholder="Ej: Ubuntu 22.04.1 LTS"
-                            class="form-control">
+                            class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-4">
                         <label>CACHE (KB)*</label>
-                        <input type="text" name="cache" for="cache" placeholder="Ej: 6144" class="form-control">
+                        <input type="text" name="cache" for="cache" placeholder="Ej: 6144" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-2">
                         <label>MEMORIA RAM (GB)*</label>
-                        <input type="text" name="memoria" for="memoria" placeholder="Ej: 3.8" class="form-control">
+                        <input type="text" name="memoria" for="memoria" placeholder="Ej: 3.8" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-3">
                         <label>Seleccione Almacenamiento: *</label>
@@ -82,39 +82,39 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label>DIRECCION IP</label>
-                        <input type="text" name="direccion" for="direccion" placeholder="Ej: 172.20.1.1" class="form-control">
+                        <input type="text" name="direccion" for="direccion" placeholder="Ej: 172.20.1.1" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-4">
                         <label>MAC *</label>
-                        <input type="text" name="mac" for="mac" placeholder="Ej: 0c:9d:92:12:20:12" class="form-control">
+                        <input type="text" name="mac" for="mac" placeholder="Ej: 0c:9d:92:12:20:12" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-3">
                         <label>Fecha ultimo mantenimiento *</label>
-                        <input type="date" name="ultimo_mantenimiento" for="ultimo_mantenimiento" class="form-control">
+                        <input type="date" name="ultimo_mantenimiento" for="ultimo_mantenimiento" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-3">
                         <label>Fecha proximo mantenimiento *</label>
-                        <input type="date" name="proximo_mantenimiento" for="proximo_mantenimiento" class="form-control">
+                        <input type="date" name="proximo_mantenimiento" for="proximo_mantenimiento" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-3">
                         <label>Año de lanzamiento de la CPU *</label>
-                        <input type="date" name="año_lanzamiento" for="año_lanzamiento" class="form-control">
+                        <input type="date" name="año_lanzamiento" for="año_lanzamiento" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-3">
                         <label>Fecha de compra de la CPU *</label>
-                        <input type="date" name="fecha_compra" for="fecha_compra" class="form-control">
+                        <input type="date" name="fecha_compra" for="fecha_compra" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-4">
                         <label>VALORACION CPU *</label>
-                        <input type="text" name="V_CPU" for="V_CPU" placeholder="De 1-5" class="form-control">
+                        <input type="text" name="V_CPU" for="V_CPU" placeholder="De 1-5" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-4">
                         <label>VALORACION RAM *</label>
-                        <input type="text" name="V_MEM" for="V_MEM" placeholder="De 1-5" class="form-control">
+                        <input type="text" name="V_MEM" for="V_MEM" placeholder="De 1-5" class="form-control" required="required">
                     </div>
                     <div class="form-group col-md-4">
                         <label>VALORACION DISCO *</label>
-                        <input type="text" name="V_DISCO" for="V_DISCO" placeholder="De 1-5" class="form-control">
+                        <input type="text" name="V_DISCO" for="V_DISCO" placeholder="De 1-5" class="form-control" required="required">
                     </div>
                     <input type="hidden" name="activo" value="<?php echo $activo ?>">
                     <div class="form-group col-md-2">
