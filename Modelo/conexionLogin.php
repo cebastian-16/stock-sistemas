@@ -1,10 +1,10 @@
 <?php
 
 	class conectar{
-		public $servername = '172.20.1.92';
+		public $servername = 'localhost';
 		public $database = "bodega";
-		public $username = "bodega";
-		public $password = "a3c2b3bf7d";
+		public $username = "root";
+		public $password = "";
 
 
 		function conexion(){

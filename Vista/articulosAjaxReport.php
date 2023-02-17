@@ -46,7 +46,7 @@ if ($action == 'ajax') {
 					<th>Tipo</th>
 					<th>Ubicacion</th>
 					<th>Observacion</th>
-					<th></th>
+					<th>Caracteristicas</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -80,7 +80,7 @@ if ($action == 'ajax') {
 							<?= $row['tipo']; ?>
 						</td>
 						<td>
-							<?= $row['ubicacion']; ?>-
+							<?= $row['ubicacion']; ?>
 							<?= $row['Sucursal']; ?>
 						</td>
 						<td></td>

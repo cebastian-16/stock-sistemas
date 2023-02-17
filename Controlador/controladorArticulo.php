@@ -27,7 +27,7 @@
 		}
 
 		public function insertarArticulo($placa,$descripcion,$tipo,$ubicacion,$observacion,$login){
-			$ubicacion = "9008";
+			$ubicacion = "1009";
 			$sql = "INSERT INTO `articulo`( `placa`, `descripcion`, `tipo_id`, `ubicacion_id`, `observacion`)";
             $sql.= "VALUES ('".$placa."', '".$descripcion."','".$tipo."',".$ubicacion.",'".$observacion."')";
           	$resultado = mysqli_query( $this->conn, $sql );
@@ -53,7 +53,7 @@
 				echo "  <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>";
 				echo "  <strong>Error!</strong> ".mysqli_error($this->conn);
 				echo "</div>";
-          	}
+          	} 
 		}
 
 		public function modificarArticulo($placa,$descripcion,$tipo,$ubicacion,$observacion,$datos,$login){

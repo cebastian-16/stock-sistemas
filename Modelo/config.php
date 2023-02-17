@@ -1,7 +1,7 @@
 <?php
-define('USER', 'bodega');
-define('PASSWORD', 'a3c2b3bf7d');
-define('HOST', '172.20.1.92');
+define('USER', 'root');
+define('PASSWORD', '');
+define('HOST', 'localhost');
 define('DATABASE', 'bodega');
  
 try {
