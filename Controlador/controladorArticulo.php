@@ -48,8 +48,8 @@
 				echo "</div>";
 
           	}else{
-		        echo "<div class='alert alert-danger alert-dismissible'>";
 				
+		        echo "<div class='alert alert-danger alert-dismissible'>";
 				echo "  <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>";
 				echo "  <strong>Error!</strong> ".mysqli_error($this->conn);
 				echo "</div>";
