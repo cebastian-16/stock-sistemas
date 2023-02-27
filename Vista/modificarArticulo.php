@@ -67,7 +67,7 @@
                     <div class="form-group">
                         <label>Placa:</label>
                         <?php echo "<input class='form-control' style='display:none;' value='" . $consultaM["placa"] . "' name='placa' type='text'>" ?>
-                        <?php echo "<input class='form-control' disabled value='" . $consultaM["placa"] . "' type='text'>" ?>
+                        <?php echo "<input class='form-control'  value='" . $consultaM["placa"] . "' type='text'>" ?>
 
                     </div>
                     <div class="form-group">
@@ -90,6 +90,7 @@
                             ?>
                         </select>
                     </div>
+                    
                     <div class="form-group">
                         <?php echo "<input class='form-control' style='display:none;' value='" . $consultaM["ubicacion_id"] . "' name='ubicacion' type='text'>" ?>
                     </div>

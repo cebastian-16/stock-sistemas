@@ -58,9 +58,9 @@
 
 		public function modificarArticulo($placa,$descripcion,$tipo,$ubicacion,$observacion,$datos,$login){
 			if ($ubicacion == "") {
-				$sql = "UPDATE `articulo` SET `descripcion`='".$descripcion."',`tipo_id`='".$tipo."',`ubicacion_id`= null,`observacion`= '".$observacion."',`id_datos`= '".$datos."' WHERE `articulo`.`placa` = '".$placa."'";
+				$sql = "UPDATE `articulo` SET `placa` = '".$placa."',`descripcion`='".$descripcion."',`tipo_id`='".$tipo."',`ubicacion_id`= null,`observacion`= '".$observacion."',`id_datos`= '".$datos."' WHERE `articulo`.`placa` = '".$placa."'";
 			}else{
-				$sql = "UPDATE `articulo` SET `descripcion`='".$descripcion."',`tipo_id`='".$tipo."',`ubicacion_id`='".$ubicacion."',`observacion`= '".$observacion."',`id_datos`= '".$datos."' WHERE `articulo`.`placa` = '".$placa."'";
+				$sql = "UPDATE `articulo` SET `placa` = '".$placa."',`descripcion`='".$descripcion."',`tipo_id`='".$tipo."',`ubicacion_id`='".$ubicacion."',`observacion`= '".$observacion."',`id_datos`= '".$datos."' WHERE `articulo`.`placa` = '".$placa."'";
 			}
           	$resultado = mysqli_query( $this->conn, $sql );
           	if ($resultado==TRUE) {
